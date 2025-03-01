@@ -7,6 +7,14 @@ const port = process.env.PORT || 3000;
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const secretKey = process.env.JWT_SECRET || 'your_secret_key';
+db.connect((err) => {
+  if (err) {
+    console.error('❌ MySQL接続エラー:', err);
+    process.exit(1); // サーバーを停止
+  } else {
+    console.log('✅ MySQLに接続成功');
+  }
+});
 
 // JSONのパースと静的ファイル提供のミドルウェア
 app.use(express.json());
