@@ -1,22 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 0;
-    background: #ffffff;
-  }
-  
-  h1 {
-    color: #000000;
-  }
-  
-  #task-list {
-    margin-bottom: 20px;
-  }
-  
-  .task-item {
-    padding: 10px;
-    background: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 5px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+}
+h1, h2 {
+  color: #333;
+}
+#auth, #task-manager {
+  margin-bottom: 20px;
+}
+.task-item {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+button {
+  margin-left: 10px;
+}
+
   
